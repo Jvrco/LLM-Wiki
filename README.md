@@ -29,14 +29,14 @@ cp-llm-wiki/
 │   └── Competitive-Programming-Lib/
 └── wiki/                  # Camada 2 (MANTIDA PELO AGENTE): conhecimento compilado
     ├── categorias/        # 8 mapas de domínio (64/64 arquivos catalogados)
-    ├── padroes/           # 7 sínteses transversais (guias de decisão, trade-offs, adaptações)
+    ├── padroes/           # 9 sínteses transversais (guias de decisão, mapa de problemas, adaptações, armadilhas)
     └── auditoria/         # 2 páginas de saúde (lint inicial + checklist pré-contest)
 ```
 
 ---
 
-## Resultados da Compilação Inicial
+## Resultados da Compilação e Manutenção
 
-- **100% de cobertura:** todos os **64 arquivos C++** (89,7 KB) em 8 categorias compilados em **17 páginas interligadas** (compatíveis com Obsidian).
+- **100% de cobertura:** todos os **64 arquivos C++** (89,7 KB) + nota textual em `raw/notas/` compilados em **19 páginas interligadas** (compatíveis com Obsidian).
 - **Auditoria (`lint`) automática:** detectou **12 bugs/armadilhas reais** no código bruto (ex.: identidade de Pascal errada em `relations.cpp`, `prefix[0]` sem inicialização em `prefixsum2.cpp`, `freopen` hardcoded em `BFS.cpp`, `'a' -> 0` nos hashes) e **37 arquivos ausentes** do `contents.txt` que gera o PDF do caderno.
 - **Acúmulo real (`query` + *write-back*):** consultas técnicas sobre adaptação de `segLazy.cpp` e checklist pré-contest foram persistidas de volta na wiki em vez de evaporarem ao fim da sessão.

@@ -61,9 +61,12 @@ O arquivo [AGENTS.md](AGENTS.md) define três operações explícitas, todas já
    - `int mid = (l+r)/2;` dentro de busca `long long` em `Others/cows.cpp`;
    - `double v = AB.cross(BC);` perdendo precisão inteira em `Geometria/ConvexHull.cpp`;
    - Mapeamento `'a' -> 0` nos 3 arquivos `Strings/Hash*.cpp` (fazendo `"a"` e `"aa"` colidirem em hash `0`).
-3. **`query` com *write-back* (Acúmulo entre sessões):** ao consultar *"como adaptar `segLazy.cpp` de range min para range sum/assign"* e *"o que corrigir antes de imprimir o caderno PDF"*, o agente consultou `index.md`, respondeu com base na wiki e **persistiu** as sínteses de volta como páginas permanentes:
-   - [wiki/padroes/adaptacoes-segtree-e-lazy.md](wiki/padroes/adaptacoes-segtree-e-lazy.md)
-   - [wiki/auditoria/checklist-pre-contest.md](wiki/auditoria/checklist-pre-contest.md)
+3. **`query` com *write-back* (Acúmulo entre sessões):** consultas técnicas foram respondidas via `index.md` e **persistidas** de volta como páginas permanentes (evitando que o raciocínio evaporasse ao fim da sessão):
+   - [wiki/padroes/adaptacoes-segtree-e-lazy.md](wiki/padroes/adaptacoes-segtree-e-lazy.md) — adaptações de `segLazy.cpp` para Range Sum / Range Assign e cuidados entre 0-based e 1-based.
+   - [wiki/auditoria/checklist-pre-contest.md](wiki/auditoria/checklist-pre-contest.md) — lista priorizada de correções e sincronização do caderno PDF.
+   - [wiki/padroes/mapa-de-problemas.md](wiki/padroes/mapa-de-problemas.md) — índice reverso mapeando ~47 problemas clássicos (CSES, Codeforces, AtCoder, SPOJ, Library Checker) aos arquivos da lib.
+   - [wiki/padroes/armadilhas-antes-de-submeter.md](wiki/padroes/armadilhas-antes-de-submeter.md) — checklist de 30 segundos antes de submeter, cruzando o `lint` com um novo `ingest` textual (`raw/notas/erros-comuns-contest.md`).
+4. **Segundo `lint` (Pós-expansão):** após a wiki crescer de 15 para **19 páginas**, o `lint` verificou 100% de cobertura de `raw/` (64 `.cpp` + 1 nota textual), 0 páginas órfãs e 0 wikilinks quebrados.
 
 ---
 

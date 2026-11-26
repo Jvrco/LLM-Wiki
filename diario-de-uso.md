@@ -63,8 +63,9 @@ Para testar o padrão de verdade (deixando o agente **construir e manter**, não
 
 | Dia | Data | Operação feita (`ingest` / `query` / `lint`) | O que aconteceu na prática (ganho ou fricção)? |
 |---|---|---|---|
-| Dia 1 | 2026-11-25 | `ingest` inicial + `lint` inicial | Base compilada (64 arquivos -> 15 páginas de wiki). Lint revelou 12 bugs/armadilhas reais e 37 arquivos fora do `contents.txt`. |
-| Dia 2 | | | |
+| Dia 1 | 2026-11-25 | `ingest` inicial + `lint` inicial + 2 `query` (*write-back*) | Base compilada (64 arquivos -> 17 páginas). Lint revelou 12 bugs/armadilhas reais e 37 arquivos fora do `contents.txt`. |
+| Simulação (Ciclo completo) | 2026-11-26 | `query` (mapa de problemas) + `ingest` (nota textual) + `lint` final | Wiki expandida para 19 páginas (0 órfãs, 0 links quebrados). Demonstração do acúmulo entre sessões com código + notas textuais em `raw/notas/`. |
+| Dia 2 | | | *(preencher durante o uso real)* |
 | Dia 3 | | | |
 | Dia 4 | | | |
 | Dia 5 | | | |

@@ -30,3 +30,16 @@ Registro cronológico *append-only* seguindo o padrão LLM Wiki (Karpathy, abril
 ## [2026-11-25] ingest | Documentação de publicação e relatório (`README.md`, `RELATORIO.md`)
 - **Snapshot bruto:** `raw/Competitive-Programming-Lib` fixado no commit `49ccee9` como snapshot imutável no repositório da wiki.
 - **Arquivos criados:** `README.md` e `RELATORIO.md` consolidando o relato da atividade.
+
+## [2026-11-26] query | Mapa reverso de problemas clássicos (salvo em `wiki/padroes/mapa-de-problemas.md`)
+- **Consulta:** mapear todos os problemas identificáveis (CSES, Codeforces, AtCoder, SPOJ, Library Checker) para seus arquivos em `raw/Competitive-Programming-Lib/` e páginas da wiki.
+- **Write-back:** criada `wiki/padroes/mapa-de-problemas.md` (~47 problemas mapeados) e indexada em `index.md`.
+
+## [2026-11-26] ingest | Nota textual `raw/notas/erros-comuns-contest.md` + checklist de submissão
+- **Fonte:** `raw/notas/erros-comuns-contest.md` (demonstrando ingestão de notas textuais além de código C++).
+- **Integração:** criada `wiki/padroes/armadilhas-antes-de-submeter.md` cruzando a nota com `lint-inicial.md` e `conventions-e-estilos-da-lib.md`; atualizado `index.md`.
+
+## [2026-11-26] lint | Verificação de integridade pós-expansão (19 páginas em `wiki/`)
+- **Cobertura de `raw/`:** 64/64 arquivos C++ + 1/1 nota textual em `raw/notas/` (100%).
+- **Páginas órfãs:** 0 (todas as 19 páginas em `wiki/` estão listadas em `index.md` e interligadas).
+- **Wikilinks quebrados:** 0.

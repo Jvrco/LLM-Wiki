@@ -31,6 +31,8 @@
 | [[wiki/padroes/dp-classicos-e-digit-dp\|DP Clássicos e Digit DP]] | Taxonomia das 11 implementações de DP (bottom-up vs. top-down, reconstrução de caminho, otimização por agrupamento de pesos e template de Digit DP). |
 | [[wiki/padroes/hashing-e-trie\|Hashing Polinomial e Tries]] | Compara Rolling Hash vs. Trie na lib, documenta o uso de `__int128` e alerta sobre armadilhas de colisão (`'a' -> 0`) e overflow. |
 | [[wiki/padroes/conventions-e-estilos-da-lib\|Convenções e Estilos da Lib]] | Mapeia os dois estilos de autoria presentes no repositório, convenções de indexação (0-based vs. 1-based), constantes `INF`/`MOD` e código boilerplate residual. |
+| [[wiki/padroes/mapa-de-problemas\|Mapa Reverso de Problemas Clássicos na Lib]] | *(query write-back)* Índice reverso conectando ~47 problemas clássicos (CSES, Codeforces, AtCoder, SPOJ, Library Checker) aos arquivos exatos da lib. |
+| [[wiki/padroes/armadilhas-antes-de-submeter\|Armadilhas Antes de Submeter (Checklist da Lib)]] | *(query write-back + ingest)* Checklist de 30 segundos consolidando os bugs e armadilhas específicas da lib + `raw/notas/erros-comuns-contest.md`. |
 
 ---
 
